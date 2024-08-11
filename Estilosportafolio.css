@@ -1,0 +1,367 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.titulo{
+    font-size: 81.1px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 1px 1px 9px #163131;
+    position: relative;
+    padding-top: 8%;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.subtitulo{
+    font-size: 35px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    letter-spacing: 2.5px;
+    text-shadow: 1px 2px 3px #174747;
+    padding-top: 0;
+    padding-bottom: 5%;
+}
+
+
+.logo{
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    z-index: 1;
+    margin-left: 10px;
+}
+
+
+.logo img{
+    display: block;  
+    max-width: 16%;
+    height: auto;
+}
+
+header{
+    z-index: 1;
+    text-align: center;
+    position: relative;
+    margin-top: 0;
+    background-color: #75a0a1;
+    padding: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+header h2{
+    display: inline-block;
+    color:#fff;
+    font-family:'Julius Sans One', sans-serif;
+    font-size: 20px;
+    padding-right: 12px;
+    padding-left: 12px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+header h2:hover{
+ color: #185555;
+}
+
+
+.imagen-fondo{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+
+#sobre_mi{
+    position: relative;
+    z-index: 1;
+    color: white;
+    margin-left: 12%;
+}
+
+#sobre_mi h3{
+    text-shadow: 1px 1px 9px #072E33;
+    font-family:'Style Script', cursive;
+    font-size: 80px;
+    letter-spacing: 1px;
+    padding-top: 5%;
+    margin-bottom: 0;
+}
+
+#sobre_mi h4{
+    font-family:'Prata', serif;
+    font-size: 35px;
+    letter-spacing: 1.1px;
+    margin-top: 0;
+    text-shadow: 1px 1px 9px #0e3035;
+}
+
+#sobre_mi p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1.1px;
+    max-width: 55%;
+    text-shadow: 1px 1px 1px #174747;
+}
+
+
+ #profilephoto img{
+    width: 25%;
+    border-radius: 50%;
+    z-index: 1;
+    position: relative;
+    float: right;
+    margin-right: 10%;
+    margin-top: 6%;
+    box-shadow: 3px 1px 15px #287774;
+}
+
+.experience_container {
+    display: flex; 
+}
+
+.experience, .skills {
+    flex: 1; 
+}
+
+.experience{
+    z-index: 1;
+    color: white;
+    margin-left: 12%;
+    position: relative;
+}
+
+.experience h3{
+    text-shadow: 1px 1px 9px #072E33;
+    font-family:'Style Script', cursive;
+    font-size: 80px;
+    letter-spacing: 1px;
+    padding-top: 5%;
+    margin-bottom: 3%;
+}
+
+.experience h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.1px;
+    padding-top: 3px;
+    margin-top: 2px;
+    padding-bottom: 20px;
+    margin-bottom: 22px;
+}
+
+.experience p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    border-bottom: 2px #0c6b5e solid;
+    display: inline;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+
+.download-button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Prata', serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: white;
+    background-color:  #072E33;
+    border: #1ec0c0;
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.download-button:hover{
+    color: #78b5d3;
+    background-color: #05161A;
+}
+
+.skills{
+    padding-top: 10px;
+    z-index: 1;
+    color: white;
+    margin-right: 12%;
+    margin-top: 18%;
+    margin-left: 15%;
+}
+
+.skills h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    letter-spacing: 1.1px;
+    border-bottom: 3px #0c6b5e solid;
+    display: inline;
+    text-shadow: 2px 2px 6px #0a434b;
+}
+
+.skills .software p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 38px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: #23a78691;
+    border-radius: 3px;
+    justify-content: center;
+}
+
+
+.skills p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+#competencias{
+    color: #26b8a4;
+}
+
+.proyects{
+    position: relative;
+    z-index: 1;
+    color: white; 
+}
+
+.proyects h3{
+    text-shadow: 1px 1px 9px #072E33;
+    font-family:'Style Script', cursive;
+    font-size: 80px;
+    letter-spacing: 1px;
+    padding-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 12%;
+}
+
+
+.proyects h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1.1px;
+    max-width: 55%;
+    text-shadow: 1px 1px 1px #174747;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 22%;
+
+}
+
+.proyectos{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9%;
+}
+
+.proyectos img{
+    width: 27%;
+    padding: 15px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.proyectos img:hover{
+    width: 29%;
+}
+
+.contact{
+    position: relative;
+    z-index: 1;
+    color: white;
+    margin-left: 12%;
+    padding-bottom: 2px;
+}
+
+.contact h3{
+    text-shadow: 1px 1px 9px #072E33;
+    font-family:'Style Script', cursive;
+    font-size: 80px;
+    letter-spacing: 1px;
+    padding-top: 5%;
+    margin-bottom: 2%;
+}
+
+form label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding-bottom: 10%;
+}
+
+form input{
+    width: 30%;
+    padding: 15px;
+    margin-bottom: 3%;
+    border-radius: 4px;
+    background-color: rgba(252, 255, 255, 0.856);
+    border: #185555;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form textarea{
+    width: 50%;
+    padding: 15px;
+    margin-bottom: 4%;
+    background-color: rgba(252, 255, 255, 0.856);
+    border: #185555;
+    font-size: 16px;
+}
+
+#boton{
+background-color: #072E33;
+color: rgba(252, 255, 255, 0.856);
+border: 2px solid transparent;
+font-family: 'Prata', serif;
+font-size: 20px;
+cursor: pointer;
+transition: border 0.3s ease
+}
+
+#boton:hover{
+    background-color: #05161A;
+    color: #78b5d3;
+}
+
+
+#redes{
+  display: block;  
+  margin-right: 9%;
+  margin-bottom: 5%;
+}
+
+
+#redes img{
+    display: block;
+    width: 3%;
+    z-index: 1;
+    position: relative;
+    float: right;
+    padding-left: 1.5%;
+}
+
+#redes img:hover{
+    width: 4%;
+}
+
