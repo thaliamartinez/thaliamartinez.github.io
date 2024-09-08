@@ -5,73 +5,22 @@ body{
     height: 100%;
 }
 
-.titulo{
-    font-size: 81.1px;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 2.2px;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: 1px 1px 9px #163131;
-    position: relative;
-    padding-top: 8%;
-    padding-bottom: 0;
-    text-align: center;
+
+img{
+    max-width: 100%;
+    height: 100%;
 }
 
-.subtitulo{
-    font-size: 35px;
-    font-family: 'Julius Sans One', sans-serif;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    letter-spacing: 2.5px;
-    text-shadow: 1px 2px 3px #174747;
-    padding-top: 0;
-    padding-bottom: 5%;
-}
-
-
-.logo{
-    position: absolute;
-    top: 0;
-    cursor: pointer;
-    z-index: 1;
-    margin-left: 10px;
-}
-
-
-.logo img{
-    display: block;  
-    max-width: 16%;
-    height: auto;
-}
-
-header{
-    z-index: 1;
-    text-align: center;
-    position: relative;
-    margin-top: 0;
-    background-color: #75a0a1;
-    padding: 10px;
-    justify-content: center;
+.navbar{
+    z-index: 1000;
     width: 100%;
+    padding: 0;
+    position: fixed;  /*fija la barra*/
 }
 
-header h2{
-    display: inline-block;
-    color:#fff;
-    font-family:'Julius Sans One', sans-serif;
-    font-size: 20px;
-    padding-right: 12px;
-    padding-left: 12px;
-    cursor: pointer;
-    z-index: 1;
+.navbar-toggler .navbar-toggler-icon{
+ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-
-header h2:hover{
- color: #185555;
-}
-
 
 .imagen-fondo{
     position: fixed;
@@ -85,96 +34,225 @@ header h2:hover{
     z-index: 0;
 }
 
-
-#sobre_mi{
-    position: relative;
-    z-index: 1;
-    color: white;
-    margin-left: 12%;
-}
-
-#sobre_mi h3{
+/* --- Títulos ---*/
+#sobre_mi h3, .experience h3, .proyects h3, .contact h3{
     text-shadow: 1px 1px 9px #072E33;
     font-family:'Style Script', cursive;
     font-size: 80px;
     letter-spacing: 1px;
-    padding-top: 5%;
     margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 6px;
+    font-weight: bold;
 }
+
+ /* ----------------------------- PAGINA PRINCIPAL --------------------------- */
+
+.container_principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.titulo{
+    font-size: 5.069em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 1px 1px 9px #163131;
+    text-align: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.subtitulo{
+    font-size: 2.18em;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    letter-spacing: 2.5px;
+    text-shadow: 1px 2px 3px #174747;
+    padding-top: 8px;
+    margin: 0;
+}
+
+/* ---- Logo --- */
+.navbar-brand{ 
+    max-width: 6%;
+    display: block;
+    margin-left: 1%;
+    margin-right: 0;
+    padding: 0;
+}
+
+/* ---- Encabezado ----*/
+
+.container-fluid{
+    background-color: #75a0a1;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; /* espacio entre logo y categorias de encabezado*/
+    align-items: center;   /*alinea verticalmente el logo y las categorias*/
+}
+
+.collapse{
+    display: flex;
+    justify-content: center;
+    text-align: center; /*centra las categorias de encabezado horizontalmente*/
+}
+
+.navbar-nav {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 15px;
+}
+
+.nav-link{
+    font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
+}
+
+
+.navbar .navbar-nav .nav-item .nav-link:hover{
+ color: #185555;
+}
+
+
+/* ------------------------------ SOBRE MI ----------------------------- */
+
+.container_about{
+    display: flex;
+    flex-direction: row;  /* alinea elementos en fila */
+    justify-content: space-between;  /* Espacia elementos a lo largo del eje vertical */
+    box-sizing: border-box;
+    align-items: center; /* Alinea elementos verticalmente */
+    min-height: 100vh;
+    width: 100%;
+}
+
+#sobre_mi{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    color: white;
+    margin-left: 12%;
+    margin-top: 0;
+    max-width: 48%;
+}
+
 
 #sobre_mi h4{
     font-family:'Prata', serif;
     font-size: 35px;
     letter-spacing: 1.1px;
-    margin-top: 0;
+    margin: 0;
     text-shadow: 1px 1px 9px #0e3035;
+    padding-bottom: 5%;
 }
 
 #sobre_mi p{
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     letter-spacing: 1.1px;
-    max-width: 55%;
+    max-width: 100%;
     text-shadow: 1px 1px 1px #174747;
+    margin: 0;
 }
 
+#profilephoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+}
 
  #profilephoto img{
-    width: 25%;
+    width: 65%;
     border-radius: 50%;
     z-index: 1;
-    position: relative;
-    float: right;
-    margin-right: 10%;
-    margin-top: 6%;
+    margin-right: 12%;
+    margin-left: 0;
     box-shadow: 3px 1px 15px #287774;
 }
 
-.experience_container {
+
+/* -------------------------------- EXPERIENCIA ------------------------------- */
+
+.experience_container {  
     display: flex; 
+    flex-wrap: wrap;                 
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center; 
+    min-height: 100vh;
+    width: 100%;   
+    padding: 10px;
 }
 
-.experience, .skills {
-    flex: 1; 
-}
 
 .experience{
+    flex: 1;
+    flex-direction: column;
     z-index: 1;
     color: white;
     margin-left: 12%;
-    position: relative;
+    margin-top: 0;
+    max-width: 50%;
 }
 
 .experience h3{
-    text-shadow: 1px 1px 9px #072E33;
-    font-family:'Style Script', cursive;
-    font-size: 80px;
-    letter-spacing: 1px;
-    padding-top: 5%;
     margin-bottom: 3%;
+    margin-top: 5%;
 }
 
 .experience h4{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     letter-spacing: 1.1px;
-    padding-top: 3px;
-    margin-top: 2px;
-    padding-bottom: 20px;
-    margin-bottom: 22px;
+    padding-top: 3%;
+    padding-bottom: 5%;
+
 }
 
 .experience p{
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
     border-bottom: 2px #0c6b5e solid;
-    display: inline;
-    padding-bottom: 2px;
-    margin-bottom: 2px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    position: relative;
+    display: inline-block;
 }
 
+
 .download-button{
-    display: inline-block;
     padding: 10px 20px;
     font-family: 'Prata', serif;
     font-size: 15px;
@@ -186,6 +264,8 @@ header h2:hover{
     border-radius: 15px;
     text-decoration: none;
     text-align: center;
+    width: 35%;
+    display: inline-block;
 }
 
 .download-button:hover{
@@ -193,13 +273,15 @@ header h2:hover{
     background-color: #05161A;
 }
 
-.skills{
-    padding-top: 10px;
-    z-index: 1;
+.skills {
+    flex: 1;
+    margin-right: 10%;
+    margin-left: 4%;
+    justify-content: center;
+    align-items: center;
     color: white;
-    margin-right: 12%;
-    margin-top: 18%;
-    margin-left: 15%;
+    z-index: 1;
+    width: 50%
 }
 
 .skills h4{
@@ -215,14 +297,11 @@ header h2:hover{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 20px;
-    margin-bottom: 38px;
     margin-right: 5px;
     margin-left: 5px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    padding: 6px;
     background-color: #23a78691;
     border-radius: 3px;
     justify-content: center;
@@ -232,86 +311,107 @@ header h2:hover{
 .skills p{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    margin-top: 5%;
 }
 
 #competencias{
     color: #26b8a4;
 }
 
+/* ----------------- PROYECTOS ---------------*/
+
+.container_proyects{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+}
+
 .proyects{
-    position: relative;
-    z-index: 1;
-    color: white; 
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 1;
+        color: white;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        margin: auto;
+        width: 100%;
 }
 
 .proyects h3{
-    text-shadow: 1px 1px 9px #072E33;
-    font-family:'Style Script', cursive;
-    font-size: 80px;
-    letter-spacing: 1px;
-    padding-top: 5%;
-    margin-bottom: 3%;
     margin-left: 12%;
-}
+    margin-top: 5%;
 
+}
 
 .proyects h4{
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     letter-spacing: 1.1px;
-    max-width: 55%;
     text-shadow: 1px 1px 1px #174747;
     text-align: center;
-    margin-bottom: 20px;
-    margin-left: 22%;
-
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
 }
 
 .proyectos{
-    display: block;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 12%;
+    margin-left: 12%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea tres columnas iguales */
+    gap: 10px; /* Espacio entre las imágenes */
+    width: 100%; /* Asegura que ocupe el 100% del contenedor */
+    justify-content: center;     
     align-items: center;
-    margin-left: 9%;
-}
+    text-align: center;
+} 
 
-.proyectos img{
-    width: 27%;
-    padding: 15px;
-    align-items: center;
+.proyectos img{     
+    width: 100%;  /*agregue - imagenes ocupan 30% del ancho*/    
+    height: auto;
+    padding: 10px;
     cursor: pointer;
-    justify-content: center;
 }
 
-.proyectos img:hover{
-    width: 29%;
+/* -------------------------- CONTACTO -------------------*/
+
+.contact_container {  
+    display: flex;
+    flex-wrap: wrap;             
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100%;   
+    padding: 10px;
 }
 
 .contact{
-    position: relative;
-    z-index: 1;
     color: white;
+    z-index: 1;
     margin-left: 12%;
-    padding-bottom: 2px;
+    margin-top: 3%;
+    width: 100%;
 }
 
 .contact h3{
-    text-shadow: 1px 1px 9px #072E33;
-    font-family:'Style Script', cursive;
-    font-size: 80px;
-    letter-spacing: 1px;
-    padding-top: 5%;
-    margin-bottom: 2%;
+    margin-top: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
+
 
 form label{
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    padding-bottom: 10%;
 }
 
 form input{
     width: 30%;
-    padding: 15px;
+    padding: 13px;
     margin-bottom: 3%;
     border-radius: 4px;
     background-color: rgba(252, 255, 255, 0.856);
@@ -336,7 +436,8 @@ border: 2px solid transparent;
 font-family: 'Prata', serif;
 font-size: 20px;
 cursor: pointer;
-transition: border 0.3s ease
+transition: border 0.3s ease;
+padding: 10px;
 }
 
 #boton:hover{
@@ -344,24 +445,191 @@ transition: border 0.3s ease
     color: #78b5d3;
 }
 
-
-#redes{
-  display: block;  
-  margin-right: 9%;
-  margin-bottom: 5%;
-}
-
-
-#redes img{
-    display: block;
-    width: 3%;
+/*
+.redes {
+    display: flex; 
+    justify-content: center; 
+    margin-right: 5%;
+    padding-bottom: 3%;
     z-index: 1;
-    position: relative;
-    float: right;
-    padding-left: 1.5%;
+  }
+
+  .redes a {
+    margin: 0 10px; 
+  }
+  
+  .redes img {
+    width: 24px;
+    height: auto; 
+    cursor: pointer;
+    vertical-align: middle; 
+  } */
+
+
+/* ---------------- MEDIA QUERYS ----------------*/
+
+/* ---- Celulares ----*/
+
+@media (max-width: 767px){
+    .titulo{
+        font-size: 2.875em;
+    }
+    
+    .subtitulo{
+        font-size: 1.25em;
+    }
+
+    .navbar-brand{ 
+        max-width: 10%;
+    }
+
+    #sobre_mi h3, .experience h3, .proyects h3, .contact h3{
+        font-size: 60px;
+        margin-left: 0;
+    }
+
+    .container_about{
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #sobre_mi{
+     margin-left: 0;
+     margin-right: 0;
+     max-width: 85%;
+    }
+
+    #sobre_mi h4{
+        font-size: 23px;
+    }
+
+    #sobre_mi p{
+        font-size: 13px;
+    }
+
+    #profilephoto img{
+        margin-right: 0;
+        width: 80%;
+        margin-top: 15px;
+    }
+
+    .experience_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+        
+    .experience {
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+        max-width: 85%;
+    }
+        
+    .experience h4{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    
+    .skills {
+        flex-direction: column;
+        width: 85%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px;
+        text-align: center;
+        }
+
+    .skills h4{
+        font-size: 18px;
+    }
+
+    .proyects{
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .proyects h4{
+        margin-top: 10%;
+        font-size: 15px;
+    }
+
+
+    .proyectos {
+         grid-template-columns: 1fr;
+        }
+
+          
+    .contact{
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    form{
+        margin-left: 0;
+        margin-right: 0;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    form input, form textarea{
+        width: 80%;
+    }
+
+    #boton{
+        width: 50%;
+    }
+    
 }
 
-#redes img:hover{
-    width: 4%;
-}
+    /* ------- Tablets -------- */
 
+    @media (min-width: 768px) and (max-width: 991px){
+        .titulo {
+            font-size: 4em;
+        }
+    
+        .subtitulo {
+            font-size: 1.6em;
+        }
+    
+        .navbar-brand {
+            max-width: 10%;
+        }
+    
+        #sobre_mi h4, .experience h4, .proyectos h4, .contact h4 {
+            font-size: 1.5em;
+        }
+    
+        #sobre_mi p, .experience p, .proyectos p, .contact p {
+            font-size: 1.1em;
+        }
+    
+        #profilephoto img {
+            width: 70%;
+        }
+    
+        .experience, .container_about, .container_proyects, .contact_container {
+            padding: 20px;
+        }
+    
+        .proyectos {
+            grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+            gap: 10px;
+        }
+    
+        form input, form textarea {
+            width: 90%;
+            padding: 12px;
+        }
+    
+        .download-button {
+            font-size: 1em;
+            padding: 10px 20px;
+        }
+    }
